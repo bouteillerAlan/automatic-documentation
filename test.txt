@@ -1,0 +1,74 @@
+// case 1
+  /**
+   * check if the user level is super admin
+   * @returns {boolean} true if the user has the right to access super admin endpoints
+   */
+  @UseGuards(AuthGuard('jwt'), LevelsGuard)
+  @Levels(LevelEnum.superadmin)
+  @Get('check/superadmin')
+  @ApiBearerAuth()
+  checkSuperAdminLevel(): boolean {
+    return true;
+  }
+
+// case 2
+  /**
+   * check if the user level is super admin
+   * @returns {boolean} true if the user has the right to access super admin endpoints
+   */
+  @Get('check/superadmin')
+  @ApiBearerAuth()
+  checkSuperAdminLevel(): boolean {
+    return true;
+  }
+
+ // case 2.1
+/**
+   * Authenticate a user, and generate a jwt
+   * @param {LoginDto} loginDto user auth infos
+   * @param {string} name user auth infos
+   * @returns {Promise<UserDocument>} the user with the jwt
+   */
+  @Get('check/superadmin')
+  @ApiBearerAuth()
+  checkSuperAdminLevel(): boolean {
+    return true;
+  }
+
+/**
+   * Authenticate a user, and generate a jwt
+   * @param {LoginDto} loginDto user auth infos
+   * @param {string} name user auth infos
+   * @returns {boolean} the user with the jwt
+   */
+  @Get('check/superadmin')
+  @ApiBearerAuth()
+  checkSuperAdminLevel(): boolean {
+    return true;
+  }
+
+  /**
+     * Authenticate a user, and generate a jwt
+     * @param {LoginDto} loginDto user auth infos
+     * @param {string} name user auth infos
+     * @returns {string[]} the user with the jwt
+     */
+    @Get('check/superadmin')
+    @ApiBearerAuth()
+    checkSuperAdminLevel(): boolean {
+      return true;
+    }
+// case 3
+  /**
+   * check if the user level is super admin
+   * @returns {boolean} true if the user has the right to access super admin endpoints
+   */
+  checkSuperAdminLevel(): boolean {
+    return true;
+  }
+
+// case 4
+  /** lorem ipsum */
+
+// case 5
+  lorem ipsum
